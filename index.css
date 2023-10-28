@@ -1,0 +1,129 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7433;
+    color: #ffffff;
+    padding: 10px 20px;
+    height: 60px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 80px;
+}
+
+.search {
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    color: #ff74337b;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.nav-items {
+    padding: 0px 20px;
+}
+
+.nav-items > ul {
+    font-size: 24px; 
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-items > ul > li {
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav-items > ul >li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.res-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.res-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.res-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+.res-card h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.res-card h4 {
+    font-size: 14px;
+    margin: 5px 0;
+    color: #666;
+}
+
+.res-card  .orderBox{
+    background-color: #ff7433;
+    padding: 8px;
+    border-radius: 4px;
+    align-self: flex-end;
+}
+
+.res-card .orderBox:hover {
+    cursor: pointer;
+}
+
+.res-card .orderBox h4 {
+    color: #ffffff;
+}
+
+
+.search {
+    padding: 10px;
+}
+
+.res-logo {
+    width: 100%;
+}
+
+@media (max-width: 800px) {
+    .res-card {
+        width: 100%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease;
+}
